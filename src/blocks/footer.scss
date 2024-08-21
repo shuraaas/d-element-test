@@ -1,13 +1,20 @@
 .footer {
-  background: #316099;
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 100px 0;
+  background-image: url('src/assets/images/footer/bg.svg');
+  background-color: #5a98d0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -96px;
+  padding-block: 90px 70px;
   color: #ffffff;
 
+  &__container {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
   &__bottom {
-    padding-top: 100px;
+    padding-top: 95px;
     display: flex;
     gap: 100px;
   }
@@ -17,11 +24,12 @@
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 
     &-title {
       font-size: 28px;
       line-height: 46px;
+      letter-spacing: 1px;
       margin: 0;
     }
 
@@ -29,17 +37,27 @@
       list-style: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
     &-item {
       display: flex;
       align-items: baseline;
-      gap: 15px;
+      gap: 22px;
 
       &-mark {
         font-size: 16px;
         line-height: 26px;
         font-weight: 600;
+      }
+
+      &-text {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.8px;
+        margin: 0;
       }
     }
   }
@@ -50,19 +68,20 @@
     gap: 15px;
   }
 
+  &__links-group {
+    display: flex;
+    gap: 77px;
+  }
+
   &__links {
     display: flex;
-    gap: 80px;
-  }
-
-  &__about {
-    display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 32px;
 
     &-title {
       font-size: 20px;
       line-height: 30px;
+      letter-spacing: 1.05px;
       font-weight: 600;
       margin: 0;
     }
@@ -73,48 +92,13 @@
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 16px;
     }
 
     &-item {
       font-size: 16px;
       line-height: 26px;
-
-      a {
-        color: #ffffff;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  &__follow {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    &-title {
-      font-size: 20px;
-      line-height: 30px;
-      font-weight: 600;
-      margin: 0;
-    }
-
-    &-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    &-item {
-      font-size: 16px;
-      line-height: 26px;
+      letter-spacing: 0.8px;
 
       a {
         color: #ffffff;
@@ -130,6 +114,8 @@
   &__copyright {
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: 0.8px;
     opacity: 0.6;
+    padding-top: 70px;
   }
 }
