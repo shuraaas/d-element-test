@@ -1,15 +1,38 @@
 .hero {
-  width: 940px;
-  margin: 0 auto;
-  background: url('src/assets/images/hero/illustration.png') no-repeat right
-    bottom;
+  background: linear-gradient(
+    0deg,
+    rgba(#98c3e8, 0.2) 8.84%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
+  height: calc(100vh - 88px);
+  padding-top: 105px;
+
+  &__container {
+    position: relative;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    position: absolute;
+    top: -100px;
+    right: -190px;
+    width: 690px;
+    height: 620px;
+    z-index: 10;
+    background: url('src/assets/images/hero/illustration.png') no-repeat center;
+    background-size: contain;
+  }
 
   &__title {
     font-family: 'Galien Regular';
     font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 3.29px;
     line-height: 74px;
     color: #1f3f68;
-    width: 500px;
+    width: 520px;
     margin: 0;
   }
 
@@ -17,9 +40,14 @@
     font-size: 16px;
     line-height: 26px;
     color: #1f3f68;
+    letter-spacing: 0.8px;
     opacity: 0.6;
-    width: 400px;
+    width: 420px;
     padding-top: 32px;
     margin: 0;
+  }
+
+  &__button {
+    margin-top: 70px;
   }
 }

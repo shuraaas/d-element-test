@@ -1,6 +1,7 @@
 .header {
-  width: 1200px;
-  height: 48px;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,12 +14,11 @@
   }
 
   &__menu {
-    width: 24px;
-    height: 16px;
-    background-image: url('src/assets/images/header/menu.svg');
+    width: 32px;
+    height: 32px;
+    background: url('src/assets/images/header/menu.svg') no-repeat center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: transparent;
     border: none;
     color: #fff;
     font-size: 16px;
