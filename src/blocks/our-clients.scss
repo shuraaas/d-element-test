@@ -1,36 +1,41 @@
 .our-clients {
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-  background: #5a98d0;
-  padding-top: 100px;
+  background-image: url('src/assets/images/our-clients/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 96px;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   gap: 100px;
   color: #ffffff;
 
+  &__container {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
   &__header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 110px;
     gap: 90px;
   }
 
   &__title {
     font-size: 36px;
     line-height: 46px;
+    letter-spacing: 1.9px;
     margin: 0;
     width: 100%;
-    max-width: 220px;
+    max-width: 230px;
   }
 
   &__text {
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: 0.8px;
     opacity: 0.6;
-    width: 400px;
+    width: 520px;
     margin: 0;
   }
 
@@ -86,6 +91,7 @@
       font-size: 20px;
       font-weight: 600;
       line-height: 46px;
+      letter-spacing: 0.4px;
     }
   }
 }
