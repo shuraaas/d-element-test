@@ -1,3 +1,25 @@
 .hero {
-  
+  width: 940px;
+  margin: 0 auto;
+  background: url('src/assets/images/hero/illustration.png') no-repeat right
+    bottom;
+
+  &__title {
+    font-family: 'Galien Regular';
+    font-size: 64px;
+    line-height: 74px;
+    color: #1f3f68;
+    width: 500px;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1f3f68;
+    opacity: 0.6;
+    width: 400px;
+    padding-top: 32px;
+    margin: 0;
+  }
 }

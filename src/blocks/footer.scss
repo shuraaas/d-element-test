@@ -1,0 +1,135 @@
+.footer {
+  background: #316099;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 100px 0;
+  color: #ffffff;
+
+  &__bottom {
+    padding-top: 100px;
+    display: flex;
+    gap: 100px;
+  }
+
+  &__contacts {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-title {
+      font-size: 28px;
+      line-height: 46px;
+      margin: 0;
+    }
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-item {
+      display: flex;
+      align-items: baseline;
+      gap: 15px;
+
+      &-mark {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 80px;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-title {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &-item {
+      font-size: 16px;
+      line-height: 26px;
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__follow {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-title {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &-item {
+      font-size: 16px;
+      line-height: 26px;
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+  }
+}

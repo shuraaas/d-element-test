@@ -1,10 +1,34 @@
 @import 'normalize.css';
+@import url(https://db.onlinewebfonts.com/c/d1243736bfe07b546f8f1e54e7804afb?family=Galien+Regular);
+@import url(https://db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy-Regular);
+
+* {
+  box-sizing: border-box;
+}
+
+// button
+@import '../blocks/button.scss';
+
+// page
+@import '../blocks/page.scss';
 
 // header
 @import '../blocks/header/header.scss';
 
 // hero
 @import '../blocks/hero.scss';
+
+// what-we-do
+@import '../blocks/what-we-do.scss';
+
+// our-clients
+@import '../blocks/our-clients.scss';
+
+// talk
+@import '../blocks/talk.scss';
+
+// footer
+@import '../blocks/footer.scss';
 
 // :root {
 //   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
