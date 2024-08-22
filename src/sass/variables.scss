@@ -1,0 +1,23 @@
+$font-Galien: 'Galien Regular';
+$font-Gilroy: 'Gilroy-Regular';
+$color-white: #ffffff;
+$color-blue-1: #5a98d0;
+$color-blue-2: #316099;
+$color-blue-3: #1f3f68;
+
+$hero-bg-gradient: linear-gradient(
+  0deg,
+  rgba(#98c3e8, 0.2) 8.84%,
+  rgba(152, 195, 232, 0) 31.12%
+);
+$bg-footer: url('src/assets/images/footer/bg.svg');
+$bg-btn-menu: url('src/assets/images/header/menu.svg');
+$bg-hero-image: url('src/assets/images/hero/bg.svg');
+$bg-clients: url('src/assets/images/our-clients/bg.svg');
+$link-arrow: url('src/assets/images/what-we-do/arrow.svg');
+
+$btn-bg-color-blue-hover: #4b88be;
+$btn-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+
+$card-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+$card-shadow-hover: 5px 20px 50px rgba(16, 112, 177, 0.4);

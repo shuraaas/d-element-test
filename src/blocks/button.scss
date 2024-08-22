@@ -1,11 +1,11 @@
 .button {
   width: 220px;
   height: 56px;
-  background: #5a98d0;
-  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  background: $color-blue-1;
+  box-shadow: $btn-shadow;
   border-radius: 10px;
   border: none;
-  color: #fff;
+  color: $color-white;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.6px;
@@ -13,6 +13,6 @@
   transition: background 0.3s ease-in-out;
 
   &:hover {
-    background: #4b88be;
+    background: $btn-bg-color-blue-hover;
   }
 }

@@ -1,11 +1,25 @@
 .footer {
-  background-image: url('src/assets/images/footer/bg.svg');
-  background-color: #5a98d0;
+  background-image: $bg-footer;
+  background-color: $color-blue-1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -96px;
   padding-block: 90px 70px;
-  color: #ffffff;
+  color: $color-white;
+
+  @include lg {
+    background-position-x: -180px;
+    padding: 60px 40px;
+  }
+
+  @include md {
+    background-position-x: -270px;
+    padding-block: 60px 40px;
+  }
+
+  @include sm {
+    padding: 20px;
+  }
 
   &__container {
     width: 100%;
@@ -16,7 +30,20 @@
   &__bottom {
     padding-top: 95px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 100px;
+
+    @include lg {
+      padding-top: 70px;
+      gap: 50px;
+    }
+
+    @include md {
+      flex-direction: column;
+      padding-top: 50px;
+      gap: 30px;
+    }
   }
 
   &__contacts {
@@ -26,51 +53,65 @@
     flex-direction: column;
     gap: 30px;
 
-    &-title {
-      font-size: 28px;
-      line-height: 46px;
-      letter-spacing: 1px;
-      margin: 0;
+    @include md {
+      gap: 10px;
     }
+  }
 
-    &-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+  &__contacts-title {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
 
-    &-item {
-      display: flex;
-      align-items: baseline;
-      gap: 22px;
+  &__contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-      &-mark {
-        font-size: 16px;
-        line-height: 26px;
-        font-weight: 600;
-      }
+  &__contacts-item {
+    display: flex;
+    align-items: baseline;
+    gap: 22px;
+  }
 
-      &-text {
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: 0.8px;
-        margin: 0;
-      }
-    }
+  &__contacts-item-mark {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+
+  &__contacts-item-text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.8px;
+    margin: 0;
   }
 
   &__logo {
     display: flex;
     align-items: center;
     gap: 15px;
+
+    @include md {
+      justify-content: center;
+    }
   }
 
   &__links-group {
     display: flex;
     gap: 77px;
+
+    @include sm {
+      width: 100%;
+      gap: unset;
+      justify-content: space-around;
+    }
   }
 
   &__links {
@@ -78,35 +119,43 @@
     flex-direction: column;
     gap: 32px;
 
-    &-title {
-      font-size: 20px;
-      line-height: 30px;
-      letter-spacing: 1.05px;
-      font-weight: 600;
-      margin: 0;
+    @include md {
+      gap: 20px;
     }
+  }
 
-    &-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+  &__links-title {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.05px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include md {
+      gap: 10px;
     }
+  }
 
-    &-item {
-      font-size: 16px;
-      line-height: 26px;
-      letter-spacing: 0.8px;
+  &__links-item {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.8px;
 
-      a {
-        color: #ffffff;
-        text-decoration: none;
+    a {
+      color: $color-white;
+      text-decoration: none;
 
-        &:hover {
-          text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

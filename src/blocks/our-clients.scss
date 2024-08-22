@@ -1,13 +1,20 @@
 .our-clients {
-  background-image: url('src/assets/images/our-clients/bg.svg');
+  background-image: $bg-clients;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 96px;
-  padding-bottom: 100px;
+  padding-block: 100px;
   display: flex;
   flex-direction: column;
   gap: 100px;
-  color: #ffffff;
+  color: $color-white;
+
+  @include lg {
+    padding: 50px 40px;
+  }
+
+  @include sm {
+    padding-inline: 20px;
+  }
 
   &__container {
     width: 100%;
@@ -19,6 +26,17 @@
     display: flex;
     margin-bottom: 110px;
     gap: 90px;
+
+    @include lg {
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    @include md {
+      margin-bottom: 40px;
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__title {
@@ -28,6 +46,16 @@
     margin: 0;
     width: 100%;
     max-width: 230px;
+
+    @include md {
+      max-width: unset;
+    }
+
+    @include sm {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -37,6 +65,14 @@
     opacity: 0.6;
     width: 520px;
     margin: 0;
+
+    @include md {
+      width: 100%;
+    }
+
+    @include sm {
+      text-align: center;
+    }
   }
 
   &__list {
@@ -47,24 +83,62 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
+
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
+    }
+
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
   }
 
   &__item {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1px solid rgba(#ffffff, 30%);
-    border-bottom: 1px solid rgba(#ffffff, 30%);
+    border-left: 1px solid rgba($color-white, 30%);
+    border-bottom: 1px solid rgba($color-white, 30%);
     padding: 40px;
     text-transform: uppercase;
     transition: background 0.3s ease-in-out;
+
+    @include lg {
+      padding: 30px;
+    }
+
+    @include md {
+      padding: 30px 20px;
+    }
 
     &:first-child {
       border-left: transparent;
     }
 
+    &:nth-child(3),
     &:nth-child(5) {
-      border-left: transparent;
+      @include sm {
+        border-left: transparent;
+      }
+    }
+
+    &:nth-child(4),
+    &:nth-child(7) {
+      @include md {
+        border-left: transparent;
+      }
+    }
+
+    &:nth-child(7),
+    &:nth-child(8) {
+      @include md {
+        border-bottom: transparent;
+      }
     }
 
     &:nth-child(5),
@@ -73,25 +147,68 @@
       border-bottom: transparent;
     }
 
+    &:nth-child(4) {
+      @include sm {
+        border-left: 1px solid rgba($color-white, 30%);
+      }
+    }
+
+    &:nth-child(5) {
+      border-left: transparent;
+
+      @include md {
+        border-left: 1px solid rgba($color-white, 30%);
+        border-bottom: 1px solid rgba($color-white, 30%);
+      }
+
+      @include sm {
+        border-left: transparent;
+      }
+    }
+
+    &:nth-child(6) {
+      @include md {
+        border-bottom: 1px solid rgba($color-white, 30%);
+      }
+    }
+
     &:last-child {
       border-bottom: transparent;
       text-transform: capitalize;
-      background: rgba(#1f3f68, 20%);
+      background: rgba($color-blue-3, 20%);
+
+      @include md {
+        border-right: 1px solid rgba($color-white, 30%);
+      }
+
+      @include sm {
+        border-right: transparent;
+      }
 
       &:hover {
-        background: rgba(#1f3f68, 30%);
+        background: rgba($color-blue-3, 30%);
       }
     }
 
     &:hover {
-      background: rgba(#1f3f68, 20%);
+      background: rgba($color-blue-3, 20%);
+    }
+  }
+
+  &__item-text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0.4px;
+
+    @include lg {
+      font-size: 16px;
+      line-height: 36px;
     }
 
-    &-text {
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 46px;
-      letter-spacing: 0.4px;
+    @include md {
+      font-size: 14px;
+      line-height: 26px;
     }
   }
 }

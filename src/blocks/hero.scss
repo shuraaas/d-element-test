@@ -1,17 +1,90 @@
 .hero {
-  background: linear-gradient(
-    0deg,
-    rgba(#98c3e8, 0.2) 8.84%,
-    rgba(152, 195, 232, 0) 31.12%
-  );
+  background: $hero-bg-gradient;
   height: calc(100vh - 88px);
-  padding-top: 105px;
+  padding-top: 100px;
+  overflow: hidden;
+
+  @include lg {
+    height: 100%;
+    padding-block: 150px;
+  }
+
+  @include md {
+    padding-block: 50px;
+  }
 
   &__container {
     position: relative;
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 20;
+
+    @include lg {
+      padding-inline: 20px;
+    }
+
+    @include md {
+      background: rgba($color-white, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 100px 20px;
+      margin-inline: 20px;
+      border-radius: 10px;
+      box-shadow: $card-shadow;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: $font-Galien;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 3.29px;
+    line-height: 74px;
+    color: $color-blue-3;
+    width: 520px;
+    margin: 0;
+
+    @include md {
+      width: 100%;
+      font-size: 44px;
+      line-height: 48px;
+      letter-spacing: 1.9px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-blue-3;
+    letter-spacing: 0.8px;
+    opacity: 0.6;
+    width: 420px;
+    padding-top: 32px;
+    margin: 0;
+
+    @include md {
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 0;
+    }
+  }
+
+  &__button {
+    margin-top: 70px;
+
+    @include md {
+      margin: 0;
+    }
   }
 
   &__image {
@@ -21,33 +94,24 @@
     width: 690px;
     height: 620px;
     z-index: 10;
-    background: url('src/assets/images/hero/illustration.png') no-repeat center;
+    background: $bg-hero-image no-repeat center;
     background-size: contain;
-  }
 
-  &__title {
-    font-family: 'Galien Regular';
-    font-size: 64px;
-    font-weight: 400;
-    letter-spacing: 3.29px;
-    line-height: 74px;
-    color: #1f3f68;
-    width: 520px;
-    margin: 0;
-  }
+    @include lg {
+      top: -100px;
+      right: -80px;
+    }
 
-  &__text {
-    font-size: 16px;
-    line-height: 26px;
-    color: #1f3f68;
-    letter-spacing: 0.8px;
-    opacity: 0.6;
-    width: 420px;
-    padding-top: 32px;
-    margin: 0;
-  }
+    @include md {
+      top: -130px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      transform: scale(0.9);
+    }
 
-  &__button {
-    margin-top: 70px;
+    @include sm {
+      transform: scale(0.8);
+    }
   }
 }

@@ -1,46 +1,14 @@
 @import 'normalize.css';
-@import url(https://db.onlinewebfonts.com/c/d1243736bfe07b546f8f1e54e7804afb?family=Galien+Regular);
-@import url(https://db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy-Regular);
 
-* {
-  box-sizing: border-box;
-}
+@import '../sass/fonts.scss';
+@import '../sass/variables.scss';
+@import '../sass/mixins.scss';
 
-// button
 @import '../blocks/button.scss';
-
-// page
 @import '../blocks/page.scss';
-
-// header
 @import '../blocks/header.scss';
-
-// hero
 @import '../blocks/hero.scss';
-
-// what-we-do
 @import '../blocks/what-we-do.scss';
-
-// our-clients
 @import '../blocks/our-clients.scss';
-
-// talk
 @import '../blocks/talk.scss';
-
-// footer
 @import '../blocks/footer.scss';
-
-// :root {
-//   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-//   line-height: 1.5;
-//   font-weight: 400;
-
-//   color-scheme: light dark;
-//   color: rgba(255, 255, 255, 0.87);
-//   background-color: #242424;
-
-//   font-synthesis: none;
-//   text-rendering: optimizeLegibility;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
