@@ -10,11 +10,11 @@ $hero-bg-gradient: linear-gradient(
   rgba(#98c3e8, 0.2) 8.84%,
   rgba(152, 195, 232, 0) 31.12%
 );
-$bg-footer: url('src/assets/images/footer/bg.svg');
-$bg-btn-menu: url('src/assets/images/header/menu.svg');
-$bg-hero-image: url('src/assets/images/hero/bg.svg');
-$bg-clients: url('src/assets/images/our-clients/bg.svg');
-$link-arrow: url('src/assets/images/what-we-do/arrow.svg');
+$bg-footer: url('../assets/images/footer/bg.svg');
+$bg-btn-menu: url('../assets/images/header/menu.svg');
+$bg-hero-image: url('../assets/images/hero/bg.svg');
+$bg-clients: url('../assets/images/our-clients/bg.svg');
+$link-arrow: url('../assets/images/what-we-do/arrow.svg');
 
 $btn-bg-color-blue-hover: #4b88be;
 $btn-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
