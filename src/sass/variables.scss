@@ -4,6 +4,7 @@ $color-white: #ffffff;
 $color-blue-1: #5a98d0;
 $color-blue-2: #316099;
 $color-blue-3: #1f3f68;
+$color-blue-4: #356ead;
 
 $hero-bg-gradient: linear-gradient(
   0deg,
@@ -15,9 +16,12 @@ $bg-btn-menu: url('../assets/images/header/menu.svg');
 $bg-hero-image: url('../assets/images/hero/bg.svg');
 $bg-clients: url('../assets/images/our-clients/bg.svg');
 $link-arrow: url('../assets/images/what-we-do/arrow.svg');
+$popup-close-btn: url('../assets/images/popup/close.svg');
 
 $btn-bg-color-blue-hover: #4b88be;
 $btn-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
 
 $card-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
 $card-shadow-hover: 5px 20px 50px rgba(16, 112, 177, 0.4);
+
+$popup-overlay: rgba(0, 0, 0, 0.5);

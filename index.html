@@ -151,7 +151,7 @@
               enim ad minim veniam.
             </p>
           </div>
-          <button class="button">Let’s Talk</button>
+          <button class="button talk__button">Let’s Talk</button>
         </section>
         <div class="footer__bottom">
           <div class="footer__contacts">
@@ -207,6 +207,61 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close" type="button"></button>
+        <h3 class="popup__description">SEND US MESSAGE</h3>
+        <form class="form" name="form-submit" method="post" action="/">
+          <fieldset class="form__content">
+            <label class="form__field">
+              Full Name
+              <input
+                class="form__input form__input_type_name"
+                name="name"
+                id="name-input"
+                type="text"
+                placeholder="Your Name"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <span class="form__input-error name-input-error"></span>
+            </label>
+            <label class="form__field">
+              Email
+              <input
+                class="form__input form__input_type_email"
+                name="email"
+                id="email-input"
+                type="text"
+                placeholder="Your Email"
+                minlength="2"
+                maxlength="200"
+                required
+              />
+              <span class="form__input-error email-input-error"></span>
+            </label>
+            <label class="form__field">
+              Message
+              <textarea
+                class="form__input form__input_type_message"
+                name="message"
+                id="message-input"
+                type="text"
+                placeholder="Your Message"
+                minlength="2"
+                maxlength="400"
+                required
+              ></textarea>
+              <span class="form__input-error message-input-error"></span>
+            </label>
+          </fieldset>
+          <button class="button form__button" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
     <script type="module" src="./src/pages/index.js"></script>
   </body>
 </html>
