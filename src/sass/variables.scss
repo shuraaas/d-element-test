@@ -1,15 +1,15 @@
-$font-Galien: 'Galien Regular';
-$font-Gilroy: 'Gilroy-Regular';
-$color-white: #ffffff;
-$color-blue-1: #5a98d0;
-$color-blue-2: #316099;
-$color-blue-3: #1f3f68;
-$color-blue-4: #356ead;
-
+$font-galien: 'Galien Regular';
+$font-gilroy: 'Gilroy-Regular';
+$color-white: rgb(255 255 255);
+$color-blue-1: rgb(90 152 208);
+$color-blue-2: rgb(49 96 153);
+$color-blue-3: rgb(31 63 104);
+$color-blue-4: rgb(53 110 173);
+$color-error: rgb(255 0 0);
 $hero-bg-gradient: linear-gradient(
   0deg,
-  rgba(#98c3e8, 0.2) 8.84%,
-  rgba(152, 195, 232, 0) 31.12%
+  rgb(152 195 232 / 0.2) 8.84%,
+  rgb(152 195 232 / 0.1) 31.12%
 );
 $bg-footer: url('../assets/images/footer/bg.svg');
 $bg-btn-menu: url('../assets/images/header/menu.svg');
@@ -17,11 +17,9 @@ $bg-hero-image: url('../assets/images/hero/bg.svg');
 $bg-clients: url('../assets/images/our-clients/bg.svg');
 $link-arrow: url('../assets/images/what-we-do/arrow.svg');
 $popup-close-btn: url('../assets/images/popup/close.svg');
-
-$btn-bg-color-blue-hover: #4b88be;
-$btn-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-
-$card-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-$card-shadow-hover: 5px 20px 50px rgba(16, 112, 177, 0.4);
-
-$popup-overlay: rgba(0, 0, 0, 0.5);
+$btn-disabled-color: rgb(170 170 170);
+$btn-bg-color-blue-hover: rgb(75 136 190);
+$btn-shadow: 5px 10px 20px rgb(53 110 173 / 0.2);
+$card-shadow: 5px 20px 50px rgb(16 112 177 / 0.2);
+$card-shadow-hover: 5px 20px 50px rgb(16 112 177 / 0.4);
+$popup-overlay: rgb(0 0 0 / 0.5);

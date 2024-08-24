@@ -14,17 +14,10 @@
     margin: 0;
     padding: 0;
     border: none;
-
-    @include md {
-      gap: 16px;
-    }
-
-    @include sm {
-      gap: 8px;
-    }
   }
 
   &__field {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -38,8 +31,7 @@
 
   &__input {
     width: 100%;
-    height: 56px;
-    padding: 35px 40px;
+    padding: 20px 40px;
     border: 1px solid rgba($color-blue-4, 0.4);
     border-radius: 10px;
     font-size: 16px;
@@ -67,6 +59,29 @@
       @include md {
         padding-block: 12px;
       }
+    }
+
+    &_type_error {
+      border-bottom: 1px solid $color-error;
+    }
+  }
+
+  &__input-error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 1;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    color: $color-error;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+
+    &_active {
+      opacity: 1;
     }
   }
 

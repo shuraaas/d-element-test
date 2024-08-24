@@ -5,10 +5,14 @@ export const settings = {
 
   submitButtonSelector: '.form__button',
 
+  disabledButtonClass: 'button_disabled',
+
   inputErrorClass: 'form__input_type_error',
 
   errorClass: 'form__input-error_active',
 };
+
+export const formValidators = {};
 
 const page = document.querySelector('.page');
 
