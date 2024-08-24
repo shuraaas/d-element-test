@@ -95,4 +95,14 @@
       height: 56px;
     }
   }
+
+  &__submit-error {
+    display: none;
+    text-align: center;
+    color: $color-error;
+
+    &_active {
+      display: block;
+    }
+  }
 }
