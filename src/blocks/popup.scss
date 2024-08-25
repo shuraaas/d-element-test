@@ -53,6 +53,11 @@
     background-color: transparent;
     transition: transform 0.3s ease;
 
+    @include sm {
+      top: -30px;
+      right: 0;
+    }
+
     &:hover {
       transform: rotateZ(90deg);
     }
