@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import eslintPlugin from 'vite-plugin-eslint';
 
 export default defineConfig({
@@ -12,5 +13,5 @@ export default defineConfig({
       '@blocks': resolve(__dirname, 'src/blocks'),
     },
   },
-  plugins: [eslintPlugin(), ViteMinifyPlugin()],
+  plugins: [eslintPlugin(), ViteMinifyPlugin(), ViteImageOptimizer()],
 });

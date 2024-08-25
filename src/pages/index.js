@@ -26,7 +26,7 @@ const popupSuccess = new PopupWithSuccess('.popup_type_success');
 
 const popup = new PopupWithForm({
   popupSelector: '.popup',
-  handleFormSubmit: async data => {
+  handleFormSubmit: async () => {
     popup.renderLoading(true);
     popup.resetSubmitError();
 
