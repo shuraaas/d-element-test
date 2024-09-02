@@ -25,7 +25,8 @@
               tristique vulputate ultrices ut mauris tellus at. Posuere
               sollicitudin odio tellus elit.
             </p>
-            <button class="button hero__button">See Our Project</button>
+            <!-- <button class="button hero__button">See Our Project</button> -->
+            <a class="button hero__button" href="#">See Our Project</a>
           </div>
           <div class="hero__image"></div>
         </div>
@@ -171,11 +172,17 @@
               </li>
               <li class="footer__contacts-item">
                 <span class="footer__contacts-item-mark">T.</span>
-                <p class="footer__contacts-item-text">+62-812-7313-4321</p>
+                <a class="footer__contacts-item-text" href="tel:+6281273134321"
+                  >+62-812-7313-4321</a
+                >
               </li>
               <li class="footer__contacts-item">
                 <span class="footer__contacts-item-mark">E</span>
-                <p class="footer__contacts-item-text">hello.afrian@gmail.com</p>
+                <a
+                  class="footer__contacts-item-text"
+                  href="mailto:hello.afrian@gmail.com&body=Hello?subject=Question"
+                  >hello.afrian@gmail.com</a
+                >
               </li>
             </ul>
           </div>
@@ -208,11 +215,18 @@
       </div>
     </footer>
 
-    <div class="popup">
+    <div id="popup" class="popup">
       <div class="popup__container">
         <button class="popup__close" type="button"></button>
         <h3 class="popup__description">SEND US MESSAGE</h3>
-        <form class="form" name="form-submit" method="post" action="/">
+        <form
+          id="form-submit"
+          class="form"
+          name="form-submit"
+          method="post"
+          action="/"
+          data-form
+        >
           <fieldset class="form__content">
             <label class="form__field">
               Full Name
@@ -222,9 +236,8 @@
                 id="name-input"
                 type="text"
                 placeholder="Your Name"
-                minlength="2"
-                maxlength="40"
-                required
+                title="Пожалуйста, введите ваше имя"
+                data-input
               />
               <span class="form__input-error name-input-error"></span>
             </label>
@@ -236,9 +249,8 @@
                 id="email-input"
                 type="email"
                 placeholder="Your Email"
-                minlength="2"
-                maxlength="200"
-                required
+                title="Пожалуйста, введите корректный адрес электронной почты"
+                data-input
               />
               <span class="form__input-error email-input-error"></span>
             </label>
@@ -250,20 +262,21 @@
                 id="message-input"
                 type="text"
                 placeholder="Your Message"
-                minlength="2"
-                maxlength="400"
-                required
+                title="Пожалуйста, введите ваше сообщение"
+                data-input
               ></textarea>
               <span class="form__input-error message-input-error"></span>
             </label>
           </fieldset>
-          <button class="button form__button" type="submit">SUBMIT</button>
+          <button id="submit-btn" class="button form__button" type="submit">
+            SUBMIT
+          </button>
           <span class="form__submit-error"></span>
         </form>
       </div>
     </div>
 
-    <div class="popup popup_type_success">
+    <div id="success-popup" class="popup">
       <div class="popup__container">
         <button class="popup__close" type="button"></button>
         <h4 class="popup__description popup__description_type_success">

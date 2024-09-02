@@ -1,2 +1,17 @@
-@import 'https://db.onlinewebfonts.com/c/d1243736bfe07b546f8f1e54e7804afb?family=Galien+Regular';
-@import 'https://db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy-Regular';
+@font-face {
+  font-family: Galien;
+  src:
+    url('../assets/fonts/Galien/Galien.woff2') format('woff2'),
+    url('../assets/fonts/Galien/Galien.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src:
+    url('../assets/fonts/Gilroy/Gilroy.woff2') format('woff2'),
+    url('../assets/fonts/Gilroy/Gilroy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

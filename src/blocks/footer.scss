@@ -1,11 +1,13 @@
+@import '../sass/variables.css';
+
 .footer {
-  background-image: $bg-footer;
-  background-color: $color-blue-1;
+  background-image: var(--bg-footer);
+  background-color: rgb(var(--color-blue-1));
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -96px;
   padding-block: 90px 70px;
-  color: $color-white;
+  color: rgb(var(--color-white));
 
   @include lg {
     background-position-x: -180px;
@@ -91,6 +93,8 @@
     line-height: 26px;
     letter-spacing: 0.8px;
     margin: 0;
+    text-decoration: none;
+    color: inherit;
   }
 
   &__logo {
@@ -151,7 +155,7 @@
     letter-spacing: 0.8px;
 
     a {
-      color: $color-white;
+      color: rgb(var(--color-white));
       text-decoration: none;
 
       &:hover {

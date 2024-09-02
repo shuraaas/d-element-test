@@ -1,11 +1,13 @@
+@import '../sass/variables.css';
+
 .button {
   width: 220px;
   height: 56px;
-  background: $color-blue-1;
-  box-shadow: $btn-shadow;
+  background: rgb(var(--color-blue-1));
+  box-shadow: var(--btn-shadow);
   border-radius: 10px;
   border: none;
-  color: $color-white;
+  color: rgb(var(--color-white));
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.6px;
@@ -13,14 +15,14 @@
   transition: background 0.3s ease-in-out;
 
   &:hover {
-    background: $btn-bg-color-blue-hover;
+    background: var(--btn-bg-color-blue-hover);
   }
 
   &_disabled {
-    background: $btn-disabled-color;
+    background: var(--btn-disabled-color);
 
     &:hover {
-      background: $btn-disabled-color;
+      background: var(--btn-disabled-color);
       cursor: not-allowed;
     }
   }

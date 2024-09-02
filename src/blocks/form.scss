@@ -1,3 +1,5 @@
+@import '../sass/variables.css';
+
 .form {
   display: flex;
   flex-direction: column;
@@ -32,23 +34,23 @@
   &__input {
     width: 100%;
     padding: 20px 40px;
-    border: 1px solid rgba($color-blue-4, 0.4);
+    border: 1px solid rgba(var(--color-blue-4), 0.4);
     border-radius: 10px;
     font-size: 16px;
     line-height: 30px;
-    color: $color-blue-3;
+    color: rgb(var(--color-blue-3));
 
     @include md {
       padding: 20px 24px;
     }
 
     &::placeholder {
-      color: rgba($color-blue-3, 0.2);
+      color: rgba(var(--color-blue-3), 0.2);
     }
 
     &:focus {
       outline: none;
-      border: 1px solid $color-blue-4;
+      border: 1px solid rgb(var(--color-blue-4));
     }
 
     &_type_message {
@@ -62,7 +64,7 @@
     }
 
     &_type_error {
-      border-bottom: 1px solid $color-error;
+      border-bottom: 1px solid rgb(var(--color-error));
     }
   }
 
@@ -74,7 +76,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 14.52px;
-    color: $color-error;
+    color: rgb(var(--color-error));
     text-overflow: ellipsis;
     overflow: hidden;
     width: 100%;
@@ -99,7 +101,7 @@
   &__submit-error {
     display: none;
     text-align: center;
-    color: $color-error;
+    color: rgb(var(--color-error));
 
     &_active {
       display: block;

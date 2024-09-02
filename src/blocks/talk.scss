@@ -1,9 +1,11 @@
+@import '../sass/variables.css';
+
 .talk {
   display: flex;
   align-items: center;
   gap: 190px;
   padding-bottom: 100px;
-  border-bottom: 1px solid rgba($color-white, 40%);
+  border-bottom: 1px solid rgba(var(--color-white), 40%);
 
   @include lg {
     gap: 100px;

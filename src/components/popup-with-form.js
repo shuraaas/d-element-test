@@ -1,21 +1,27 @@
 import Popup from './popup.js';
 
 export default class PopupWithForm extends Popup {
+  #handleFormSubmit;
+  #form;
+  #inputList;
+  #submitBtn;
+  #submitBtnText;
+  #submitError;
+
   constructor({ popupSelector, handleFormSubmit }) {
     super(popupSelector);
-    this._handleFormSubmit = handleFormSubmit;
-    this._boundGetInputValues = this._getInputValues.bind(this);
-    this._form = this._popup.querySelector('.form');
-    this._inputList = this._popup.querySelectorAll('.form__input');
-    this._submitBtn = this._popup.querySelector('.form__button');
-    this._submitBtnText = this._submitBtn.textContent;
-    this._submitError = this._popup.querySelector('.form__submit-error');
+    this.#handleFormSubmit = handleFormSubmit;
+    this.#form = this.popup.querySelector('[data-form]');
+    this.#inputList = this.popup.querySelectorAll('[data-input]');
+    this.#submitBtn = this.popup.querySelector('#submit-btn');
+    this.#submitBtnText = this.#submitBtn.textContent;
+    this.#submitError = this.popup.querySelector('.form__submit-error');
   }
 
-  _getInputValues() {
+  #getInputValues() {
     this.inputValues = {};
 
-    this._inputList.forEach(input => {
+    this.#inputList.forEach(input => {
       this.inputValues[input.name] = input.value;
     });
 
@@ -24,24 +30,24 @@ export default class PopupWithForm extends Popup {
 
   renderLoading(isLoading) {
     if (isLoading) {
-      this._submitBtn.textContent = 'Sending...';
+      this.#submitBtn.textContent = 'Sending...';
     } else {
-      this._submitBtn.textContent = this._submitBtnText;
+      this.#submitBtn.textContent = this.#submitBtnText;
     }
   }
 
   setSubmitError(error) {
-    this._submitError.textContent = error;
-    this._submitError.classList.add('form__submit-error_active');
+    this.#submitError.textContent = error;
+    this.#submitError.classList.add('form__submit-error_active');
   }
 
   resetSubmitError() {
-    this._submitError.textContent = '';
-    this._submitError.classList.remove('form__submit-error_active');
+    this.#submitError.textContent = '';
+    this.#submitError.classList.remove('form__submit-error_active');
   }
 
   setInputValues(data) {
-    this._inputList.forEach(input => {
+    this.#inputList.forEach(input => {
       input.value = data[input.name];
     });
   }
@@ -53,15 +59,15 @@ export default class PopupWithForm extends Popup {
 
   close() {
     super.close();
-    this._form.reset();
+    this.#form.reset();
   }
 
   setEventListeners() {
     super.setEventListeners();
 
-    this._form.addEventListener('submit', evt => {
+    this.#form.addEventListener('submit', evt => {
       evt.preventDefault();
-      this._handleFormSubmit(this._getInputValues());
+      this.#handleFormSubmit(this.#getInputValues());
     });
   }
 }

@@ -1,37 +1,35 @@
 import './index.scss';
 
-import { settings, formValidators, buttonLetsTalk } from '@utils/constants.js';
+import {
+  settings,
+  formValidators,
+  buttonLetsTalk,
+  apiConfig,
+} from '@utils/constants.js';
 
 import PopupWithForm from '@components/popup-with-form.js';
 import PopupWithSuccess from '@components/popup-with-success.js';
 import FormValidator from '@components/form-validator.js';
+import Api from '../api/api.js';
 
-const submitForm = () => {
-  return new Promise((resolve, reject) => {
-    const delay = Math.floor(Math.random() * 2000) + 1000;
+const api = new Api(apiConfig);
 
-    setTimeout(() => {
-      const isSuccess = Math.random() > 0.5;
-
-      if (isSuccess) {
-        resolve('Форма успешно отправлена!');
-      } else {
-        reject('Что-то пошло не так...');
-      }
-    }, delay);
-  });
-};
-
-const popupSuccess = new PopupWithSuccess('.popup_type_success');
+const popupSuccess = new PopupWithSuccess('#success-popup');
 
 const popup = new PopupWithForm({
-  popupSelector: '.popup',
-  handleFormSubmit: async () => {
+  popupSelector: '#popup',
+  handleFormSubmit: async data => {
     popup.renderLoading(true);
     popup.resetSubmitError();
 
     try {
-      const result = await submitForm();
+      const result = await api.postData({
+        postId: 1,
+        name: data.name,
+        email: data.email,
+        body: data.message,
+      });
+
       console.log(result);
       popup.close();
       popupSuccess.open();

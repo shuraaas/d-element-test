@@ -1,5 +1,7 @@
+@import '../sass/variables.css';
+
 .hero {
-  background: $hero-bg-gradient;
+  background: var(--hero-bg-gradient);
   height: calc(100vh - 88px);
   padding-top: 100px;
   overflow: hidden;
@@ -29,12 +31,12 @@
     }
 
     @include md {
-      background: rgba($color-white, 0.1);
+      background: rgba(var(--color-white), 0.1);
       backdrop-filter: blur(10px);
       padding: 100px 20px;
       margin-inline: 20px;
       border-radius: 10px;
-      box-shadow: $card-shadow;
+      box-shadow: var(--card-shadow);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -44,12 +46,12 @@
   }
 
   &__title {
-    font-family: $font-galien;
+    font-family: var(--font-galien);
     font-size: 64px;
     font-weight: 400;
     letter-spacing: 3.29px;
     line-height: 74px;
-    color: $color-blue-3;
+    color: rgb(var(--color-blue-3));
     width: 520px;
     margin: 0;
 
@@ -64,7 +66,7 @@
   &__text {
     font-size: 16px;
     line-height: 26px;
-    color: $color-blue-3;
+    color: rgb(var(--color-blue-3));
     letter-spacing: 0.8px;
     opacity: 0.6;
     width: 420px;
@@ -81,6 +83,10 @@
 
   &__button {
     margin-top: 70px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
 
     @include md {
       margin: 0;
@@ -94,7 +100,7 @@
     width: 690px;
     height: 620px;
     z-index: 10;
-    background: $bg-hero-image no-repeat center;
+    background: var(--bg-hero-image) no-repeat center;
     background-size: contain;
 
     @include lg {

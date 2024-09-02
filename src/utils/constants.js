@@ -1,9 +1,9 @@
 export const settings = {
-  formSelector: '.form',
+  formSelector: '[data-form]',
 
-  inputSelector: '.form__input',
+  inputSelector: '[data-input]',
 
-  submitButtonSelector: '.form__button',
+  submitButtonSelector: '#submit-btn',
 
   disabledButtonClass: 'button_disabled',
 
@@ -17,3 +17,7 @@ export const formValidators = {};
 const page = document.querySelector('.page');
 
 export const buttonLetsTalk = page.querySelector('.talk__button');
+
+export const apiConfig = {
+  baseUrl: 'https://jsonplaceholder.typicode.com/',
+};

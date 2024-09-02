@@ -1,0 +1,28 @@
+:root {
+  --font-galien: 'Galien';
+  --font-gilroy: 'Gilroy';
+  --color-white: 255, 255, 255;
+  --color-blue-1: 90, 152, 208;
+  --color-blue-2: 49, 96, 153;
+  --color-blue-3: 31, 63, 104;
+  --color-blue-4: 53, 110, 173;
+  --color-error: 255, 0, 0;
+  --color-green: 0, 255, 0;
+  --hero-bg-gradient: linear-gradient(
+    0deg,
+    rgb(152 195 232 / 0.2) 8.84%,
+    rgb(152 195 232 / 0) 31.12%
+  );
+  --bg-footer: url('../assets/images/footer/bg.svg');
+  --bg-btn-menu: url('../assets/images/header/menu.svg');
+  --bg-hero-image: url('../assets/images/hero/bg.svg');
+  --bg-clients: url('../assets/images/our-clients/bg.svg');
+  --link-arrow: url('../assets/images/what-we-do/arrow.svg');
+  --popup-close-btn: url('../assets/images/popup/close.svg');
+  --btn-disabled-color: rgb(170 170 170);
+  --btn-bg-color-blue-hover: rgb(75 136 190);
+  --btn-shadow: 5px 10px 20px rgb(53 110 173 / 0.2);
+  --card-shadow: 5px 20px 50px rgb(16 112 177 / 0.2);
+  --card-shadow-hover: 5px 20px 50px rgb(16 112 177 / 0.4);
+  --popup-overlay: rgb(0 0 0 / 0.5);
+}

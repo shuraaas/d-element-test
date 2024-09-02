@@ -6,6 +6,7 @@
     "import-notation": "string",
     "no-descending-specificity": null,
     "at-rule-empty-line-before": null,
-    "selector-class-pattern": null
+    "selector-class-pattern": null,
+    "color-function-notation": null
   }
 }

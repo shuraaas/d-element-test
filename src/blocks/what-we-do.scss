@@ -1,3 +1,5 @@
+@import '../sass/variables.css';
+
 .what-we-do {
   width: 100%;
   max-width: 940px;
@@ -21,7 +23,7 @@
     font-size: 36px;
     line-height: 46px;
     letter-spacing: 2px;
-    color: $color-blue-2;
+    color: rgb(var(--color-blue-2));
     margin: 0;
     width: 100%;
     max-width: 370px;
@@ -67,14 +69,14 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    background: $color-white;
+    background: rgb(var(--color-white));
     padding: 48px;
     margin: 0;
     width: 100%;
     max-width: 380px;
     height: 525px;
     border-radius: 10px;
-    box-shadow: $card-shadow;
+    box-shadow: var(--card-shadow);
     transition: box-shadow 0.3s;
 
     @include lg {
@@ -89,7 +91,7 @@
     }
 
     &:hover {
-      box-shadow: $card-shadow-hover;
+      box-shadow: var(--card-shadow-hover);
     }
 
     &:nth-child(1) {
@@ -132,7 +134,7 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 1.05px;
-    color: $color-blue-3;
+    color: rgb(var(--color-blue-3));
     margin: 0;
 
     @include lg {
@@ -145,7 +147,7 @@
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.8px;
-    color: $color-blue-3;
+    color: rgb(var(--color-blue-3));
     opacity: 0.6;
     margin: 0;
     padding-top: 15px;
@@ -162,7 +164,7 @@
     align-items: center;
     gap: 23px;
     text-decoration: none;
-    color: $color-blue-1;
+    color: rgb(var(--color-blue-1));
     padding-top: 32px;
 
     @include lg {
@@ -181,7 +183,7 @@
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0.8px;
-    color: $color-blue-1;
+    color: rgb(var(--color-blue-1));
     margin: 0;
 
     @include lg {
@@ -192,7 +194,7 @@
   &__item-link-arrow {
     width: 24px;
     height: 24px;
-    background-image: $link-arrow;
+    background-image: var(--link-arrow);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

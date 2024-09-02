@@ -1,12 +1,14 @@
+@import '../sass/variables.css';
+
 .our-clients {
-  background-image: $bg-clients;
+  background-image: var(--bg-clients);
   background-size: cover;
   background-repeat: no-repeat;
   padding-block: 100px;
   display: flex;
   flex-direction: column;
   gap: 100px;
-  color: $color-white;
+  color: rgb(var(--color-white));
 
   @include lg {
     padding: 50px 40px;
@@ -102,8 +104,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1px solid rgba($color-white, 30%);
-    border-bottom: 1px solid rgba($color-white, 30%);
+    border-left: 1px solid rgba(var(--color-white), 30%);
+    border-bottom: 1px solid rgba(var(--color-white), 30%);
     padding: 40px;
     text-transform: uppercase;
     transition: background 0.3s ease-in-out;
@@ -149,7 +151,7 @@
 
     &:nth-child(4) {
       @include sm {
-        border-left: 1px solid rgba($color-white, 30%);
+        border-left: 1px solid rgba(var(--color-white), 30%);
       }
     }
 
@@ -157,8 +159,8 @@
       border-left: transparent;
 
       @include md {
-        border-left: 1px solid rgba($color-white, 30%);
-        border-bottom: 1px solid rgba($color-white, 30%);
+        border-left: 1px solid rgba(var(--color-white), 30%);
+        border-bottom: 1px solid rgba(var(--color-white), 30%);
       }
 
       @include sm {
@@ -168,17 +170,17 @@
 
     &:nth-child(6) {
       @include md {
-        border-bottom: 1px solid rgba($color-white, 30%);
+        border-bottom: 1px solid rgba(var(--color-white), 30%);
       }
     }
 
     &:last-child {
       border-bottom: transparent;
       text-transform: capitalize;
-      background: rgba($color-blue-3, 20%);
+      background: rgba(var(--color-blue-3), 20%);
 
       @include md {
-        border-right: 1px solid rgba($color-white, 30%);
+        border-right: 1px solid rgba(var(--color-white), 30%);
       }
 
       @include sm {
@@ -186,12 +188,12 @@
       }
 
       &:hover {
-        background: rgba($color-blue-3, 30%);
+        background: rgba(var(--color-blue-3), 30%);
       }
     }
 
     &:hover {
-      background: rgba($color-blue-3, 20%);
+      background: rgba(var(--color-blue-3), 20%);
     }
   }
 
